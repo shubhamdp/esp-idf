@@ -1,9 +1,12 @@
-# Default sdkconfig parameters to use the OTA
-# partition table layout, with a 4MB flash size
+# This file was generated using idf.py save-defconfig. It can be edited manually.
+# Espressif IoT Development Framework (ESP-IDF) 5.2.1 Project Minimal Configuration
+#
 CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
-CONFIG_PARTITION_TABLE_TWO_OTA=y
-
-# Certificate bundle configuration
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_OFFSET=0xC000
+CONFIG_EXAMPLE_WIFI_SSID="ES_Staff"
+CONFIG_EXAMPLE_WIFI_PASSWORD="ES@puba45"
+CONFIG_MBEDTLS_SSL_PROTO_TLS1_3=y
 CONFIG_MBEDTLS_CERTIFICATE_BUNDLE_DEFAULT_CMN=y
 CONFIG_MBEDTLS_CUSTOM_CERTIFICATE_BUNDLE=y
 CONFIG_MBEDTLS_CUSTOM_CERTIFICATE_BUNDLE_PATH="server_certs/ca_cert.pem"
